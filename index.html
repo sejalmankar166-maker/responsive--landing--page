@@ -2,31 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Advanced Stopwatch</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Tic Tac Toe | Pro Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="app">
-    <h1>STOPWATCH</h1>
+<div class="container">
+    <h1>⚡ Tic Tac Toe</h1>
+    <p id="turn">Player X Turn</p>
 
-    <div class="display">
-        <span id="min">00</span>:
-        <span id="sec">00</span>.
-        <span id="ms">00</span>
+    <div class="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
     </div>
 
-    <div class="controls">
-        <button onclick="start()">Start</button>
-        <button onclick="pause()">Pause</button>
-        <button onclick="lap()">Lap</button>
-        <button id="reset" onclick="reset()">Reset</button>
-    </div>
-
-    <div class="laps">
-        <h2>Lap History</h2>
-        <ul id="lapList"></ul>
+    <div class="buttons">
+        <button id="restart">Restart Game</button>
     </div>
 </div>
 
