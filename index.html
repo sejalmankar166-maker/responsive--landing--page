@@ -2,82 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Advanced Stopwatch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Responsive Landing Page</title>
-
-    <!-- CSS File -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-    <nav id="navbar">
-        <div class="logo">Prodigy</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<div class="app">
+    <h1>STOPWATCH</h1>
 
-    <!-- ================= HERO SECTION ================= -->
-    <section id="home" class="hero">
-        <h1>Build Your <span>Future</span> With Us</h1>
-        <p>Modern, responsive and interactive landing page for internship selection</p>
-        <button onclick="scrollToSection('services')">Get Started</button>
-    </section>
+    <div class="display">
+        <span id="min">00</span>:
+        <span id="sec">00</span>.
+        <span id="ms">00</span>
+    </div>
 
-    <!-- ================= ABOUT SECTION ================= -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>
-            This project is built using HTML, CSS and JavaScript.
-            It focuses on clean UI design, smooth navigation and real-world user interaction.
-        </p>
-    </section>
+    <div class="controls">
+        <button onclick="start()">Start</button>
+        <button onclick="pause()">Pause</button>
+        <button onclick="lap()">Lap</button>
+        <button id="reset" onclick="reset()">Reset</button>
+    </div>
 
-    <!-- ================= SERVICES SECTION ================= -->
-    <section id="services">
-        <h2>Our Services</h2>
+    <div class="laps">
+        <h2>Lap History</h2>
+        <ul id="lapList"></ul>
+    </div>
+</div>
 
-        <div class="cards">
-
-            <div class="card">
-                <h3>Web Design</h3>
-                <p>Creative and modern UI/UX design for websites.</p>
-                <button onclick="scrollToSection('contact')">Know More</button>
-            </div>
-
-            <div class="card">
-                <h3>Development</h3>
-                <p>Frontend & backend development with clean code.</p>
-                <button onclick="scrollToSection('contact')">Know More</button>
-            </div>
-
-            <div class="card">
-                <h3>Internship Training</h3>
-                <p>Industry-level training with real-world projects.</p>
-                <button onclick="scrollToSection('contact')">Apply Now</button>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ================= CONTACT SECTION ================= -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: contact@prodigy.com</p>
-        <p>Phone: +91 98765 43210</p>
-    </section>
-
-    <!-- ================= FOOTER ================= -->
-    <footer>
-        <p>© 2026 Prodigy Internship Project | Designed by You</p>
-    </footer>
-
-    <!-- ================= JS FILE ================= -->
-    <script src="script.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
